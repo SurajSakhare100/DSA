@@ -1,3 +1,3 @@
-# DSA
-here i daily code dsa
-by love babbar
+# DSA_C++
+here i daily code on Dsa
+follows love babbar dsa playlist
