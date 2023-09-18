@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    //dsa course
+    //dsa course - pattern
 /*********** Patterns using while loop ************/
 
 // Q1. print following pattern :
