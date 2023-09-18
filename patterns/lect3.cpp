@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-/********* Patterns using while loop **********/
+/*********** Patterns using while loop ************/
 
 // Q1. print following pattern :
 
