@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+    //dsa course
 /*********** Patterns using while loop ************/
 
 // Q1. print following pattern :
