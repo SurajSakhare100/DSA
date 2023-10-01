@@ -30,7 +30,7 @@ int main(){
     // cout<<b1;
     // float q=2.0/5;
     // cout<<q<<" "<<3.0/5;
-    // int m=-222;
-    // cout<<!m;
+    int m=-222;
+    cout<<!m;
     return 0;
 }
