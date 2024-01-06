@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     // if - else condinals...
-
+    //refer below code for notes
     // your are adult check..
 
     // cout<<"enter a num : ";
