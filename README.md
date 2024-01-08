@@ -1,3 +1,3 @@
 # DSA_C++
-here i daily code on Dsa
-follows love babbar dsa playlist
+On this repo, i daily code on Dsa(c++)..
+following --- Love Babbar Dsa Playlist.
