@@ -11,8 +11,8 @@ public:
     //     this->name = name;
     //     this->age = age;
     // };
-    Person(){
-
+    Person()
+    {
     }
 };
 
@@ -20,76 +20,124 @@ class Student : public Person
 {
 public:
     int rollno;
-    Student(string name, int age,int rollno)
+    Student(string name, int age, int rollno)
     {
         this->name = name;
         this->age = age;
         this->rollno = rollno;
     }
-    void getInfo(){
-        cout<<"name is : "<<name<<endl;
-        cout<<"age is : "<<age<<endl;
-        cout<<"rollno is : "<<rollno<<endl;
+    void getInfo()
+    {
+        cout << "name is : " << name << endl;
+        cout << "age is : " << age << endl;
+        cout << "rollno is : " << rollno << endl;
     }
-    Student(){
-
+    Student()
+    {
     }
 };
 
-//polymorphism 
-class Print {
+// polymorphism
+class Print
+{
 public:
     // Function to print an integer
-    void show(int i) {
+    void show(int i)
+    {
         cout << "Integer: " << i << endl;
     }
 
     // Function to print a double
-    void show(double d) {
+    void show(double d)
+    {
         cout << "Double: " << d << endl;
     }
 
     // Function to print a string
-    void show(string s) {
+    void show(string s)
+    {
         cout << "String: " << s << endl;
     }
 };
 
-class Base {
+class Base
+{
 public:
-    virtual void show() {  // Virtual function
+    virtual void show()
+    { // Virtual function
         cout << "Base class show() function" << endl;
     }
 
-    void display() {
+    void display()
+    {
         cout << "Base class display() function" << endl;
     }
 };
 
-class Derived : public Base {
+class Derived : public Base
+{
 public:
-    void show() override {  // Override the base class function
+    void show() override
+    { // Override the base class function
         cout << "Derived class show() function" << endl;
     }
 
-    void display() {
+    void display()
+    {
         cout << "Derived class display() function" << endl;
     }
 };
 
+// Abstract class
+class Shape
+{
+public:
+    // Pure virtual function (abstract method)
+    virtual void draw() = 0;
+
+    // Virtual destructor
+    virtual ~Shape() {}
+};
+
+// Derived class 1
+class Circle : public Shape
+{
+public:
+    void draw() override
+    {
+        cout << "Drawing a Circle" << endl;
+    }
+};
+
+// Derived class 2
+class Rectangle : public Shape
+{
+public:
+    void draw() override
+    {
+        cout << "Drawing a Rectangle" << endl;
+    }
+};
+
+// Function to draw any shape
+void drawShape(Shape *shape)
+{
+    shape->draw();
+}
+
 int main()
 {
     Student s1;
-    s1.name="suraj";
-    s1.age=21;
-    s1.rollno=12;
+    s1.name = "suraj";
+    s1.age = 21;
+    s1.rollno = 12;
     s1.getInfo();
-     Print p;
-    p.show(5);        // Calls show(int)
-    p.show(6.7);      // Calls show(double)
-    p.show("Hello");  // Calls show(string)
+    Print p;
+    p.show(5);       // Calls show(int)
+    p.show(6.7);     // Calls show(double)
+    p.show("Hello"); // Calls show(string)
 
-    Base* basePtr;
+    Base *basePtr;
     Derived d;
     basePtr = &d;
 
@@ -98,6 +146,10 @@ int main()
 
     // Calls Base class's display() (No polymorphism here)
     basePtr->display();
+    Circle circle;
+    Rectangle rectangle;
 
+    drawShape(&circle);
+    drawShape(&rectangle);
     return 0;
 }
