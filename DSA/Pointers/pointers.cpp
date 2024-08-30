@@ -25,12 +25,14 @@ int main()
     cout<<addressof(a);
 
     int arr[] = {1, 2, 3, 4};
-    int *p = arr;
-    cout << p << endl;
+    // int *p = arr;
+    // cout << p << endl;
+    cout << 3[arr] << endl;
+    cout << *(3+ arr) << endl;
 
-    char b[] = "xyz";
-    char *c = &b[0];
-    cout << c << endl;
+    // char b[] = "xyz";
+    // char *c = &b[0];
+    // cout << c << endl;
 
     return 0;
 }
